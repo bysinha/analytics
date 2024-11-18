@@ -1,0 +1,83 @@
+.roadmap{
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 120px;
+
+        &--right{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__description{
+        max-width: 480px;
+
+    }
+
+    &__title{
+        font-weight: 700;
+        font-size: 40px;
+        color: $background-dark-blue;
+        margin-bottom: 30px;
+    }
+
+    &__text-block{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: $text-secondary;
+    }
+
+    &__picture{
+        max-width: 600px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .roadmap{
+        text-align: center;
+
+        &__item{
+            gap: 20px;
+        }
+
+        &__item--right{
+            gap: 20px;
+ 
+        }
+
+        &__description{
+            min-width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width:756px){
+    .roadmap{
+        &__item{
+            flex-direction: column;
+            margin-bottom: 90px;
+        }
+
+        &__item--right{
+            flex-direction: column;
+            margin-bottom: 90px;
+        }
+
+        &__description{
+            min-width: 50%;
+        }
+
+        &__title{
+            font-style: 32px;
+        }
+
+        &__description{
+            font-size: 16px;
+        }
+    }
+
+}
